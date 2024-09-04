@@ -1,0 +1,47 @@
+body {
+    background-image: url('light.gif'); /* Ruta del GIF */
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.titulo-animado {
+    animation: movimiento 5s infinite;
+}
+
+@keyframes movimiento {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
